@@ -1,0 +1,6 @@
+<launch>
+  <node name="server" pkg="rosserial_python" type="serial_node.py" args="tcp" />
+  <node name="comm"   pkg="publisher" type="publisher4" />
+  <node name="osoyoo_ros" pkg="osoyoo_ros" type="osoyoo_ros" />
+</launch>
+
